@@ -47,4 +47,4 @@ jobs:
             cd ci-cd-test
             git pull
             npm i
-            pm2 start app.js
+            pm2 start -f app.js
