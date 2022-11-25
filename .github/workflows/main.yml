@@ -44,5 +44,7 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           port: ${{ secrets.EC2_PORT }}
           script: |
-            touch CI-CD-test
-   
+            cd ci-cd-test
+            git pull
+            npm i
+            pm2 start app.js
